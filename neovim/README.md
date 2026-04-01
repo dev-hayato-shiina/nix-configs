@@ -2,10 +2,10 @@
 
 ビルド
 ```sh
-nix build .
+cd ~/nix-configs/neovim && nix build "path:."
 ```
 
-ビルドしたNeovimを起動する
+ビルドした Neovim を起動する
 ```sh
-result/bin/nvim
+~/nix-configs/neovim/result/bin/neovim
 ```
