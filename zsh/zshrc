@@ -33,10 +33,10 @@ zinit cdreplay -q
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 ## 補完する際、ファイル一覧に色をつける
-zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}" 
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
 ## デフォの補完画面ではなくfzfを利用する
-zstyle ':completion:*' menu no                          
+zstyle ':completion:*' menu no
 
 ## cd時に行き先のフォルダの内容を表示
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
