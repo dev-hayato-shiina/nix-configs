@@ -21,6 +21,7 @@
       }
 
       spawn-at-startup "${pkgs.swaybg}/bin/swaybg" "-i" "${./img/img-1.jpg}" "-m" "fill"
+      spawn-at-startup "${pkgs.waybar}/bin/waybar"
 
       layout {
         gaps 5
@@ -73,6 +74,7 @@
     extraPackages = with pkgs; [
       alacritty
       swaybg
+      waybar
       xwayland-satellite
     ];
   };
